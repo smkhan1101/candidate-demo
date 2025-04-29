@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  nest-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nestjs-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    # Remove the command override as it's already defined in Dockerfile
+    # command: npm run start:prod
+    # Remove problematic volume mappings
+    # volumes:
+    #   - ./src:/app/src
+    #   - ./dist:/app/dist
+    #   - ./node_modules:/app/node_modules
+    restart: always
