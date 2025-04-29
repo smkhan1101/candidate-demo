@@ -1,6 +1,6 @@
 // API Configuration
 export const API_CONFIG = {
-  BASE_URL: 'https://condidate-test-be.onrender.com',
+  BASE_URL: 'http://localhost:4000',
   ENDPOINTS: {
     JOBS: '/jobs',
     CANDIDATES: '/candidates',
