@@ -16,6 +16,9 @@ A full-stack application that implements a job-candidate matching system using v
 - PostgreSQL with pgvector extension (deployed on AWS)
 
 ## Project Structure
+
+
+
 ```
 candidate_demo_app/
 ├── frontend/         # NextJS frontend application
